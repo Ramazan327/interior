@@ -41,6 +41,10 @@ header {
     background-color: #D3CBC5;
 }
 
+.burger {
+    display: none;
+}
+
 .header {
     padding: 10px 0;
     display: flex;
