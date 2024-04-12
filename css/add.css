@@ -1,0 +1,144 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: "Raleway";
+    transition: .3s;
+}
+
+button {
+    cursor: pointer;
+}
+
+@font-face {
+    font-family: "Raleway";
+    src: url(../fonts/Raleway-Light.ttf);
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "Raleway";
+    src: url(../fonts/Raleway-Regular.ttf);
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: "Raleway";
+    src: url(../fonts/Raleway-SemiBold.ttf);
+    font-weight: 700;
+}
+
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+.py-130 {
+    padding: 130px 0;
+}
+
+header {
+    background-color: #D3CBC5;
+}
+
+.header {
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.burger {
+    display: none;
+}
+
+.nav {
+    display: flex;
+    gap: 65px;
+}
+
+.nav a {
+    font-size: 20px;
+    font-weight: 400;
+    color: black;
+}
+
+.nav a:hover {
+    transform: scale(1.1);
+}
+
+.icons {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.icons a:hover {
+    transform: scale(1.1);
+}
+
+h1 {
+    text-align: center;
+    font-size: 32px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.form input {
+    padding: 20px ;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    outline: none;
+    border-bottom: 1px solid #D3CBC5;
+}
+
+.form input::placeholder {
+    font-size: 15px;
+    
+}
+
+.form button {
+    padding: 20px;
+    background-color: #D3CBC5;
+    font-size: 18px;
+    border: none;
+    border-radius: 10px;
+}
+
+.logo:hover {
+    transform: scale(1.1);
+}
+
+footer {
+    background-color: #D3CBC5;
+}
+
+.footer {
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+@media (max-width:400px) {
+    .container {
+        max-width: 380px;
+    }
+
+    .nav {
+        display: none;
+    }
+
+    .burger {
+        display: block;
+        width: 24px;
+    }
+
+}

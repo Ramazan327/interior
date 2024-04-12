@@ -1,0 +1,318 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: "Raleway";
+    transition: .3s;
+}
+
+button {
+    cursor: pointer;
+}
+
+.burger {
+    display: none;
+}
+
+@font-face {
+    font-family: "Raleway";
+    src: url(../fonts/Raleway-Light.ttf);
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "Raleway";
+    src: url(../fonts/Raleway-Regular.ttf);
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: "Raleway";
+    src: url(../fonts/Raleway-SemiBold.ttf);
+    font-weight: 700;
+}
+
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+.py-130 {
+    padding: 130px 0;
+}
+
+header {
+    background-color: #D3CBC5;
+}
+
+.header {
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav {
+    display: flex;
+    gap: 65px;
+}
+
+.nav a {
+    font-size: 20px;
+    font-weight: 400;
+    color: black;
+}
+
+.nav a:hover {
+    transform: scale(1.1);
+}
+
+.icons {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.icons a:hover {
+    transform: scale(1.1);
+}
+
+.logo:hover {
+    transform: scale(1.1);
+}
+
+
+.banner {
+    background-image: url(../image/ban.png);
+    background-size: cover;
+    height: 90vh;
+}
+
+.banner_text {
+    display: flex;
+    flex-direction: column;
+    height: 90vh;
+    justify-content: center;
+    margin-left: 220px;
+    padding-bottom: 50px;
+}
+
+
+.banner_text p {
+    font-size: 16px;
+    color: #2C314B;
+    font-weight: 500;
+    margin-bottom: 7px;
+}
+
+.banner_text h1 {
+    width: 500px;
+    font-size: 50px;
+    font-weight: 700;
+    color: black;
+    margin-bottom: 15px;
+}
+
+.banner_text button {
+    background-color: black;
+    width: 115px;
+    font-weight: 700;
+    font-size: 14px;
+    text-align: center;
+    color: white;
+    padding: 10px 27px;
+    border: none;
+}
+
+.banner_text button:hover {
+    transform: scale(1.1);
+}
+
+.catalog h1 {
+    font-size: 42px;
+    font-weight: 500;
+    color: black;
+    margin-bottom: 35px;
+}
+
+.grid_items {
+    display: flex;
+    flex-direction: column;
+    width: 255px;
+}
+
+.item_img {
+    background-color: #F7F7F7;
+    height: 240px;
+    justify-content: center ;
+    display: flex;
+    align-items: center;
+}
+
+.item_icons {
+    display: flex;
+    gap: 20px;
+    width: 255px;
+    justify-content: center;
+    background-color: black;
+    padding: 9px 0;
+    margin-bottom: 5px;
+}
+
+.item_text h2 {
+    font-weight: 700;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.price_star {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.price_star p {
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.price_star .star {
+    display: flex; 
+    gap: 5px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 30px;
+}
+
+.sub {
+    background-image: url(../image/sub.png);
+    background-size: cover;
+    padding: 120px 0;
+}
+
+.sub_text {
+    width: 415px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.sub_text img {
+    margin-bottom: 20px;
+    width: 200px;
+}
+
+.sub_text h1 {
+    font-size: 36px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.sub_text p {
+    font-size: 18px;
+    font-weight: 400;
+    text-align: center;
+    color: #5e5e5e;
+    margin-bottom: 15px;
+}
+
+.input {
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
+}
+
+.input input {
+    width: 275px;
+    padding: 15px;
+    border: 1px solid #5e5e5e;
+    border-radius: 5px;
+    outline: none;
+    background-color: transparent;
+}
+
+.input input::placeholder {
+    font-size: 12px;
+    font-weight: 400;
+    color: #5e5e5e;
+}
+
+
+.input button {
+    padding: 15px 25px;
+    background-color: transparent;
+    border: 1px solid #5e5e5e;
+    border-radius: 5px;
+    color: black;
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.input button:hover {
+    background-color: #5e5e5e;
+    color: #DDD7D1;
+}
+
+footer {
+    background-color: #D3CBC5;
+}
+
+.footer {
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+@media (max-width:400px) {
+    .container {
+        max-width: 380px;
+    }
+
+    .nav {
+        display: none;
+    }
+
+    .burger {
+        display: block;
+        width: 24px;
+    }
+
+    .banner_text {
+        margin-left: 0;
+    }
+
+    .banner_text h1 {
+        font-size: 28px;
+    }
+
+    .catalog h1 {
+        font-size: 24px;
+    }
+
+    .grid {
+        grid-template-columns: 1fr;
+        margin-left: 60px;
+    }
+
+    .sub_text {
+        width: 350px;
+    }
+
+    .sub_text h1 {
+        font-size: 28px;
+    }
+
+    .sub_text p {
+        font-size: 14px;
+    }
+
+    .input input {
+        width: 250px;
+    }
+}

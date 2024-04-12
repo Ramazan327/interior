@@ -1,0 +1,217 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: "Raleway";
+    transition: .3s;
+}
+
+@font-face {
+    font-family: "Raleway";
+    src: url(../fonts/Raleway-Light.ttf);
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "Raleway";
+    src: url(../fonts/Raleway-Regular.ttf);
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: "Raleway";
+    src: url(../fonts/Raleway-SemiBold.ttf);
+    font-weight: 700;
+}
+
+.admin {
+    display: flex;
+}
+
+.nav {
+    width: 450px;
+    height: 1100px;
+    background-color: #D3CBC5;
+    padding: 35px 30px;
+}
+
+.logo img {
+    width: 250px;
+}
+
+.logo {
+    margin-bottom: 60px;
+}
+
+.admin_name {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    margin-bottom: 60px;
+}
+
+.admin_name h2 {
+    width: 95px;
+    height: 95px;
+    background-color: black;
+    border-radius: 100px;
+}
+
+.admin_name p {
+    font-size: 32px;
+    color: white;
+    font-weight: 500;
+}
+
+.nav_item {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.nav_item a {
+    color: white;
+    font-weight: 500;
+    font-size: 32px;
+}
+
+.nav_item a:hover {
+    border-bottom: 1px solid white;
+}
+
+.spisok h1 {
+    margin-top: 60px;
+    margin-left: 40px;
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 130px;
+}
+
+.spisok_text h2 {
+    font-size: 36px;
+    font-weight: 500;
+    margin-left: 40px;
+    margin-bottom: 40px;
+}
+
+.items {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(217, 217, 217, 0.10);
+    padding: 20px 90px;
+    width: 1100px;
+    margin-bottom: 40px;
+}
+
+.title {
+    display: flex;
+    justify-content: space-between;
+}
+
+.title img {
+    width: 50px;
+    height: 50px;
+    margin-right: 40px;
+}
+
+.items_img {
+    display: none;
+}
+
+
+.items a {
+    color: black;
+    border-bottom: 1px solid black;
+}
+
+@media (max-width:400px) {
+    .admin {
+        flex-direction: column;
+    }
+
+    .nav {
+        width: 400px;
+        height: auto;
+    }
+
+    .logo {
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    .admin_name {
+        justify-content: center;
+    }
+
+    .admin_name h2 {
+        width: 50px;
+        height: 50px;
+    }
+
+    .admin_name p {
+        font-size: 28px;
+    }
+
+    .admin_name {
+        margin-bottom: 30px;
+    }
+
+    .nav_item a{
+        font-size: 24px;
+    }
+
+    .nav_item img{
+        width: 30px;
+    }
+    
+
+    .spisok h1 {
+        font-size: 28px;
+        margin-bottom: 50px;
+    }
+
+    .spisok_text h2 {
+        font-size: 24px;
+    }
+
+
+
+    .items {
+        width: auto;
+        align-items: center;
+        padding: 10px 30px;
+    }
+
+    .items img {
+        width: 30px;
+        height: 30px;
+    }
+
+    .items_img {
+        display: block;
+    }
+
+    .items a {
+        border-bottom: none;
+    }
+
+    .dop {
+        display: block;
+        color: black;
+        font-size: 40px;
+        text-decoration: none;
+        
+    }
+
+    .title img {
+        width: 30px;
+        height: 30px;
+        margin-right: 40px;
+    }
+
+    .items_a {
+        display: none;
+    }
+}

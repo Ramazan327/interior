@@ -1,0 +1,250 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: "Raleway";
+    transition: .3s;
+}
+
+button {
+    cursor: pointer;
+}
+
+@font-face {
+    font-family: "Raleway";
+    src: url(../fonts/Raleway-Light.ttf);
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "Raleway";
+    src: url(../fonts/Raleway-Regular.ttf);
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: "Raleway";
+    src: url(../fonts/Raleway-SemiBold.ttf);
+    font-weight: 700;
+}
+
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+.py-130 {
+    padding: 130px 0;
+}
+
+header {
+    background-color: #D3CBC5;
+}
+
+.header {
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav {
+    display: flex;
+    gap: 65px;
+}
+
+.nav a {
+    font-size: 20px;
+    font-weight: 400;
+    color: black;
+}
+
+.nav a:hover {
+    transform: scale(1.1);
+}
+
+.icons {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.icons a:hover {
+    transform: scale(1.1);
+}
+
+.logo:hover {
+    transform: scale(1.1);
+}
+
+.tovar {
+    display: flex;
+    gap: 70px;
+}
+
+.tov_img img {
+    width: 365px;
+}
+
+.tovar_text h1 {
+    font-size: 40px;
+    font-weight: 700;
+    color: black;
+    margin-bottom: 40px;
+}
+
+.tovar_text p {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 38px;
+    margin-bottom: 20px;
+}
+
+.star {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.star img {
+    width: 30px;
+}
+
+.tovar_text h2 {
+    font-weight: 500;
+    font-size: 32px;
+    margin-bottom: 40px;
+}
+
+.btn1 {
+    padding: 18px 105px;
+    background-color: transparent;
+    border: 2px solid #D3CBC5;
+    color: #D3CBC5; 
+    font-size: 24px;
+    font-weight: 500;
+    border-radius: 5px;
+}
+
+.btn1:hover {
+    background-color: #D3CBC5;
+    color: white;
+}
+
+.btn {
+    display: flex;
+    gap: 30px;
+}
+
+.btn2 {
+    padding: 18px 105px;
+    background-color: #D3CBC5;
+    color: white; 
+    font-size: 24px;
+    font-weight: 500;
+    border-radius: 5px;
+    border: none;
+}
+
+.btn2:hover {
+    background-color: transparent;
+    color: #D3CBC5;
+    border: 2px solid #D3CBC5;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+footer {
+    background-color: #D3CBC5;
+}
+
+.footer {
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+
+@media (max-width:400px) {
+    .container {
+        max-width: 380px;
+    }
+
+    .nav {
+        display: none;
+    }
+
+    .burger {
+        display: block;
+        width: 24px;
+    }
+
+    .tovar {
+        display: block;
+    }
+
+    .tov_img img {
+        width: 250px;
+        
+    }
+
+    .tov_img {
+        text-align: center;
+        margin-bottom: 10px;
+
+    }
+
+    .tovar_text h1 {
+        font-size: 28px;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    .tovar_text p {
+        font-size: 16px;
+        text-align: center;
+    }
+
+    .star img {
+        width: 20px;
+    }
+
+    .star {
+        margin-left: 120px;
+    }
+
+    .tovar_text h2 {
+        text-align: center;
+        font-size: 20px;
+    }
+
+    .btn {
+        display: block;
+        margin-left: 20px;
+    }
+
+    .btn button {
+        width: 340px;
+        margin-bottom: 10px;
+        font-size: 14px;
+    }
+}

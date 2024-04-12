@@ -1,0 +1,201 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: "Raleway";
+    transition: .3s;
+}
+
+button {
+    cursor: pointer;
+}
+
+@font-face {
+    font-family: "Raleway";
+    src: url(../fonts/Raleway-Light.ttf);
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "Raleway";
+    src: url(../fonts/Raleway-Regular.ttf);
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: "Raleway";
+    src: url(../fonts/Raleway-SemiBold.ttf);
+    font-weight: 700;
+}
+
+body {
+    background-color: #F5F5F5;
+}
+
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+.py-130 {
+    padding: 130px 0;
+}
+
+header {
+    background-color: #D3CBC5;
+}
+
+.header {
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav {
+    display: flex;
+    gap: 65px;
+}
+
+.burger {
+    display: none;
+}
+
+.nav a {
+    font-size: 20px;
+    font-weight: 400;
+    color: black;
+}
+
+.nav a:hover {
+    transform: scale(1.1);
+}
+
+.icons {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.icons a:hover {
+    transform: scale(1.1);
+}
+
+.logo:hover {
+    transform: scale(1.1);
+}
+
+.atho {
+    display: flex;
+    width: 1140px;
+    justify-content: space-between;
+    background-color: white;
+    box-shadow: 4px 4px 23px 5px rgba(0, 0, 0, 0.25);;
+    border-radius: 20px;
+}
+
+.atho_text {
+    padding: 40px;
+}
+
+.atho_text h1 {
+    font-size: 32px;
+    font-weight: 500;
+    margin-bottom: 50px;
+}
+
+.input {
+    display: flex;
+    flex-direction: column;
+}
+
+.input input {
+    width: 400px;
+    padding: 10px;
+    background-color: transparent;
+    border-top: none;
+    border-bottom: 1px solid #D9D9D9;
+    border-left:none;
+    border-right: none;
+    outline: none;
+    margin-bottom: 30px;
+}
+
+.input input::placeholder {
+    color: #D9D9D9;
+    font-size: 16px;
+    font-weight: 400;
+
+}
+
+.atho_text p {
+    margin-bottom: 100px;
+}
+
+.atho_text button {
+    padding: 22px 172px;
+    background-color: #D3CBC5;
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+    border: none;
+    border-radius: 5px;
+
+}
+
+.atho_text button:hover {
+    background-color: transparent;
+    color: #D3CBC5;
+    border: 1px solid #D3CBC5;
+}
+
+
+
+
+
+footer {
+    background-color: #D3CBC5;
+}
+
+.footer {
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+@media (max-width:400px) {
+    .container {
+        max-width: 380px;
+    }
+
+    .nav {
+        display: none;
+    }
+
+    .burger {
+        display: block;
+        width: 24px;
+    }
+
+    .atho_img {
+        display: none;  
+    }
+
+    .atho {
+        width: 380px;
+    }
+
+    .input input {
+        width: 300px;
+    }
+
+    .atho_text p {
+        font-size: 14px;
+    }
+
+    .atho_text button {
+        padding: 22px 130px;
+    }
+}
